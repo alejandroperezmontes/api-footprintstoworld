@@ -1,0 +1,49 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "airbnb"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 15,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "linebreak-style": 0,
+        "max-len": [
+        "error",
+        {
+            "code": 120,
+            "ignoreComments": true,
+            "ignoreUrls": true,
+            "ignoreStrings": true
+        }
+        ],
+        "no-unused-vars": [
+        "error",
+        {
+            "argsIgnorePattern": "next"
+        }
+        ],
+        "import/extensions": [
+        "error",
+        "always"
+        ],
+        "comma-dangle": [
+        "error",
+        "never"
+        ],
+        "import/no-unresolved": "off",
+        "no-lonely-if": "off",
+        "camelcase": "off"
+    }
+}
